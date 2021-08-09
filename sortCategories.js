@@ -24,7 +24,7 @@ function sortCategories(category, map, sortedCategories) {
 	sortedCategories.push(category);
 	
 	var childCategories = map[category.id];	
-	console.log(childCategories)
+	
 	if(!childCategories) 
 		return;
 		
