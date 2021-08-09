@@ -4,12 +4,12 @@ function sortCategoriesForInsert(inputJson) {
 
   for (let cat of categories) {
     if (cat.parent_id == null) {
-      rootCategories.push(cat);
+      	rootCategories.push(cat);
     } else {
-		if(map[cat.parent_id])
-			map[cat.parent_id].push(cat);
-		else
-			map[cat.parent_id] = [ cat ];
+	if(map[cat.parent_id])
+		map[cat.parent_id].push(cat);
+	else
+		map[cat.parent_id] = [ cat ];
     }
   }
   
